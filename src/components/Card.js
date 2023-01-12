@@ -1,13 +1,10 @@
 import React from 'react'
 
-function Card({ description, url, title }) {
+function Card({ description, url, title, img }) {
   return (
     <div className='card-container'>
       <div className='img-container'>
-        <img
-          src={require('./../projects/prjImgs/testAnalizatorImg.jpg')}
-          alt='web-adress'
-        />
+        <img src={require(`./../projects/prjImgs/${img}`)} alt='web-adress' />
       </div>
       <div className='card-content'>
         <div className='card-title'>
